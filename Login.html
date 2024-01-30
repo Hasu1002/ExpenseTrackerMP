@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Log-in</title>
+    <style>
+        body {
+            background-color: #f0ceff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start; /* Align items to the right */
+            background-image: url('images/image-removebg-preview.png');
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+
+        #expenseTracker {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;            
+         
+        }
+
+        .ex {
+            margin-left: 60px;
+            color: black;
+        }
+
+        .login-container {
+            width: 80%; /* Adjusted width for better responsiveness */
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 8px;
+        }
+
+        button {
+            padding: 8px;
+            background-color: #003152;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000080;
+        }
+
+        h1,h3 {
+            text-align: center;
+        }
+        .d{
+        margin-top:60px;
+        margin-left:150px;
+        }
+
+        a {
+            color: #080838;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d">
+    <div>
+        <h2 class="ex">EXPENSE TRACKER</h2>
+        <h3 class="ex1">Track today, transform tomorrow</h3>
+        <div class="login-container">
+        	<h1>Log-in</h1>
+            <form method="post" action="LoginServlet">
+                <input type="text" id="strUsername" name="strUsername" placeholder="Username"><br><br>
+                <input type="password" id="strPassword" name="strPassword" placeholder="Password"><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <h3>Don't have an account? <a href="Register.html">Click here to register</a></h3>
+    </div>
+    </div>
+</body>
+
+</html>
